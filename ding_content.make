@@ -50,6 +50,8 @@ projects[workbench][version] = "1.2"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
+; Prevent file_get_contents warning when using ckeditor afer cache clear.
+projects[wysiwyg][patch][] = "https://www.drupal.org/files/wysiwyg-1802394-4.patch"
 
 projects[media_vimeo][subdir] = "contrib"
 projects[media_vimeo][version] = "2.0-rc1"
