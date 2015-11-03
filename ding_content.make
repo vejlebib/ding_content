@@ -49,11 +49,11 @@ projects[workbench][subdir] = "contrib"
 projects[workbench][version] = "1.2"
 
 ; This revision support the CKEditor 4.x, and can be used until a new version is tagged.
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
 projects[wysiwyg][download][revision] = "7981731f4f3db2f932419499d2ec13a073e9b88f"
-; Prevent file_get_contents warning when using ckeditor afer cache clear.
-projects[wysiwyg][patch][] = "https://www.drupal.org/files/wysiwyg-1802394-4.patch"
 
 projects[media_vimeo][subdir] = "contrib"
 projects[media_vimeo][version] = "2.0-rc1"
