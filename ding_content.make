@@ -7,7 +7,7 @@ projects[cache_actions][subdir] = "contrib"
 projects[cache_actions][version] = "2.0-alpha5"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.5"
+projects[ctools][version] = "1.9"
 
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.5"
@@ -48,8 +48,10 @@ projects[views][version] = "3.8"
 projects[workbench][subdir] = "contrib"
 projects[workbench][version] = "1.2"
 
-projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.2"
+; This revision support the CKEditor 4.x, and can be used until a new version is tagged.
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
+projects[wysiwyg][download][revision] = "7981731f4f3db2f932419499d2ec13a073e9b88f"
 ; Prevent file_get_contents warning when using ckeditor afer cache clear.
 projects[wysiwyg][patch][] = "https://www.drupal.org/files/wysiwyg-1802394-4.patch"
 
@@ -71,7 +73,7 @@ projects[image_resize_filter][version] = "1.14"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][destination] = "libraries"
 
@@ -80,5 +82,5 @@ libraries[ckeditor][destination] = "libraries"
 projects[ding_page][type] = "module"
 projects[ding_page][download][type] = "git"
 projects[ding_page][download][url] = "git@github.com:ding2/ding_page.git"
-projects[ding_page][download][tag] = "7.x-2.2.0"
+projects[ding_page][download][tag] = "7.x-2.3.0"
 
